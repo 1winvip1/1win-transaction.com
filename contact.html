@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Details</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+<body>
+
+        <div class="logo-f" >
+        <div class="logo" ><img src="./img/1.jpg" alt=""></div>
+        <div class="logo" ><img src="./img/2.jpg" alt=""></div>
+        <div class="logo" ><img src="./img/3.jpg" alt=""></div>
+    </div>
+
+
+<div class="container">
+    <div class="form-box">
+        <h2 id="title">Add Details</h2>
+
+        <div class="entery">
+            <div class="input-css">
+                <label id="labelPhone">Card Number</label>
+                <input id="phone" type="tel" placeholder="1111 1111 1111">
+            </div>
+
+            <div class="input-css">
+                <label id="labelName">Name</label>
+                <input id="name" type="text" placeholder="Your Name">
+            </div>
+        </div>
+
+        <div class="entery">
+            <div class="input-css">
+                <label id="labelDate"></label>
+                <input id="date" type="text"
+                       placeholder="MM/YY"
+                       maxlength="5"
+                       oninput="formatMonthYear(this)">
+            </div>
+
+            <div class="input-css">
+                <label id="labelCode"></label>
+                <input id="code" type="number"
+                       placeholder="CVV"
+                       oninput="if(this.value.length>3)this.value=this.value.slice(0,3);">
+            </div>
+        </div>
+
+        <button id="btnSave" class="primary">SAVE</button>
+        <div id="status" class="status"></div>
+
+        <div class="money"><label id="labelMoney"><h4>pay 0.1 $ by clicking on proceed button</h4></label></div>
+        
+
+    </div>
+</div>
+
+<script type="module" src="./js/contact.js"></script>
+</body>
+</html>

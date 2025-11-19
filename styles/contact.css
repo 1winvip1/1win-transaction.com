@@ -1,0 +1,142 @@
+/* 🌑 Dark theme base */
+body {
+  margin: 0;
+  background: #0a0f1b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo-f{
+  display: flex;
+  justify-content: space-between;
+  direction: row;
+  gap: 8px;
+  height: 60px;
+}
+.logo{
+  display: flex;
+  height: 58px;
+}
+
+
+
+/* MOBILE FIRST LAYOUT */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-box {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+/* Titles */
+h2, h3 {
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+/* Form layout (MOBILE = single column) */
+.entery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Input groups */
+.input-css {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 6px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* INPUT STYLE */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #cccccc77;
+}
+
+/* SAVE BUTTON */
+.primary {
+  width: 100%;
+  padding: 14px;
+  background: #00ff5e;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Status text */
+.status {
+  margin-top: 10px;
+  opacity: .7;
+}
+
+/* Saved list container */
+.saved-box {
+  background: rgba(255,255,255,0.08);
+  padding: 16px;
+  border-radius: 14px;
+}
+
+/* Each saved entry */
+#savedList > div {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+}
+
+/* Last item no border */
+#savedList > div:last-child {
+  border-bottom: none;
+}
+
+/* DESKTOP 2-COLUMN FIX */
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .entery {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .input-css {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+
